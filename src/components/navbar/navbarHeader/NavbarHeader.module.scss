@@ -1,0 +1,30 @@
+.wrapper {
+
+  .navbar_header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    .navbar_header_icon {
+      height: 32px;
+      width: 32px;
+    }
+
+    .navbar_header_description {
+      text-transform: uppercase;
+      font-weight: 600;
+      line-height: 36px;
+      letter-spacing: 0.07em;
+      text-align: left;
+      color: rgba(215, 228, 238, 1);
+    }
+  }
+
+  .navbar_line {
+    margin-top: 18px;
+    margin-bottom: 32px;
+    width: 215px;
+    height: 2px;
+    background-color: rgba(236, 243, 248, 0.15);
+  }
+}

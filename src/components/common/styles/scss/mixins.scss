@@ -1,0 +1,15 @@
+@import './variables';
+
+@mixin flex($direction, $justifyContent, $alignItems) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justifyContent;
+  align-items: $alignItems;
+}
+
+@mixin circle($radius, $color) {
+  background-color: $color;
+  width: $radius;
+  height: $radius;
+  border-radius: $radius;
+}

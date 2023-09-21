@@ -1,0 +1,117 @@
+@import '../radioStations/RadioStations.module';
+@import '../../../common/styles/scss/mixins';
+
+.ether_container {
+  background-color: rgb(236, 243, 248);
+  width: 330px;
+  margin-bottom: 36px;
+
+  .title {
+    @extend .caption;
+  }
+
+  .ether_content {
+    .drop_down {
+      margin-bottom: 12px;
+    }
+
+    .ether {
+      height: 351px;
+
+      .ether_header {
+        height: 77px;
+        background-color: #0072AE;
+        border-radius: 8px 8px 0 0;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        .radio_icon {
+          width: 77px;
+
+          img {
+            width: 100%;
+            vertical-align: middle;
+          }
+        }
+
+        .prayer_block {
+          .in_ether {
+            height: 14px;
+            padding: 2px 8px 2px 8px;
+            border-radius: 42px;
+            width: 56px;
+            background-color: #ECF3F8;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .circle {
+              height: 4px;
+              width: 4px;
+              background-color: #D12138;
+              border-radius: 4px;
+            }
+
+            .item {
+              font-size: 12px;
+              font-weight: 500;
+              line-height: 18px;
+              letter-spacing: 0;
+            }
+          }
+        }
+      }
+
+      .ether_grid {
+        height: 274px;
+        border-radius: 0 0 8px 8px;
+        background-color: #FFFFFF;
+        padding-left: 16px;
+        overflow: hidden;
+
+        .item {
+          padding: 13px 0;
+
+          span {
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 24px;
+            letter-spacing: 0;
+
+          }
+        }
+
+        .music_list {
+          @include flex(column, initial, initial);
+          gap: 3px;
+        }
+      }
+    }
+  }
+  .title_notes {
+    @extend .caption;
+    margin-top: 22px;
+  }
+  .notes {
+    textarea {
+      padding: 10px;
+      height: 140px;
+      box-sizing: border-box;
+      width: 100%;
+      border: none;
+      border-radius: 8px;
+      resize: none;
+
+      font-family: 'Poppins', sans-serif;
+      font-size: 14px;
+      font-weight: 400;
+    }
+    textarea:focus {
+      outline: none;
+    }
+  }
+}
+
+
+

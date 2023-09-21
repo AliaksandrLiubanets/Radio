@@ -1,0 +1,119 @@
+@import '../../common/styles/scss/mixins';
+
+.music_block {
+  width: 295px;
+  height: 50px;
+  border: 2px solid #152432;
+  border-radius: 8px;
+  box-sizing: border-box;
+  @include flex(row, initial, initial);
+
+  .music_part_left {
+    width: 11px;
+    height: 100%;
+    background-color: #0072AE;
+    box-sizing: border-box;
+    border-right: 2px solid #152432;
+    border-radius: 8px 0 0 8px;
+    @include flex(column, space-evenly, center);
+    gap: 20px;
+
+    .black_circle {
+      @include circle(6px, #152432);
+    }
+  }
+
+  .music_part_center {
+    padding: 0 10px;
+    width: 275px;
+    background-color: #86C5FF29;
+
+    @include flex(row, space-between, initial);
+
+    .music_wrapper {
+      @include flex(row, initial, center);
+      gap: 21px;
+
+      .music_time {
+        @include flex(column, space-around, center);
+
+        .music_time_start, .music_time_finish {
+          @extend .time_width;
+
+          span {
+            @extend .text_font;
+          }
+        }
+
+        .music_time_finish {
+        }
+      }
+
+      .music_song {
+        @include flex(column, space-around, initial);
+
+        .music_picture {
+          @include flex(row, initial, center);
+          gap: 10px;
+          background-color: #0F3F65;
+          border-radius: 31px;
+          width: 59px;
+          height: 16px;
+          padding: 0 6px;
+
+          .music_text {
+            span {
+              vertical-align: middle;
+              font-size: 10px;
+              font-weight: 500;
+              line-height: 14px;
+              letter-spacing: 0;
+              color: #FFFFFF;
+            }
+          }
+
+          .music_img {
+            img {
+              vertical-align: middle;
+            }
+          }
+        }
+
+        .music_singer {
+          span {
+            font-size: 10px;
+            font-weight: 500;
+            line-height: 14px;
+            letter-spacing: 0;
+            vertical-align: bottom;
+            height: 16px;
+          }
+        }
+      }
+    }
+
+    .music_all_time {
+      span {
+        @extend .text_font;
+      }
+    }
+  }
+
+  .music_part_right {
+    width: 6px;
+    height: 100%;
+    background-color: #152432;
+    border-radius: 0 8px 8px 0;
+  }
+}
+
+.text_font {
+  font-family: Inter, sans-serif;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0;
+}
+
+.time_width {
+  width: 46px;
+}

@@ -1,0 +1,42 @@
+.navbar_item_block {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+
+  .navbar_item_icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 24px;
+    height: 24px;
+
+    img {
+    }
+  }
+
+  .navbar_item_description {
+    display: flex;
+    align-items: center;
+
+    span {
+      display: inline-block;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 24px;
+      letter-spacing: 0;
+      text-align: left;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+
+  .navbar_triangle {
+    position: absolute;
+    width: 0;
+    height: 0;
+    right: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 18px solid rgba(236, 243, 248, 1);
+  }
+}
